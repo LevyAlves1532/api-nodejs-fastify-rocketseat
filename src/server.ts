@@ -10,7 +10,9 @@ const app = fastify()
 
 // http://localhost:3333/hello
 
-app.register(transcationsRoutes)
+app.register(transcationsRoutes, {
+  prefix: 'transactions',
+})
 
 app
   .listen({
