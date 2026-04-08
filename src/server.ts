@@ -1,4 +1,5 @@
 import fastify from 'fastify'
+import cookie from '@fastify/cookie'
 // import crypto from 'node:crypto'
 
 import { env } from './env/index.js'
@@ -10,6 +11,7 @@ const app = fastify()
 
 // http://localhost:3333/hello
 
+app.register(cookie)
 app.register(transcationsRoutes, {
   prefix: 'transactions',
 })
