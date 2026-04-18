@@ -12,8 +12,18 @@ const app = fastify()
 // http://localhost:3333/hello
 
 app.register(cookie)
+
+// Contexto global da aplicação
+// app.addHook('preHandler', async (request, reply) => {
+//   console.log(`[${request.method}] ${request.url}`)
+// })
+
 app.register(transcationsRoutes, {
   prefix: 'transactions',
+})
+
+app.get('/hello', () => {
+  return 'Hello World'
 })
 
 app
