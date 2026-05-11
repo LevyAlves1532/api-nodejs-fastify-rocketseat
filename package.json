@@ -1,5 +1,5 @@
 {
-  "name": "rotas_http",
+  "name": "api-transacoes",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "API de transações com Fastify, Knex e SQLite (projeto do curso Rocketseat)",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^25.5.0",

@@ -1,4 +1,4 @@
-# rotas_http - API de Transações
+# api-transacoes - API de Transações
 
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-Runtime-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
@@ -12,7 +12,9 @@
 
 ## Sobre o Projeto
 
-O **rotas_http** é uma API HTTP simples para **criação e consulta de transações**, com persistência em **SQLite** e separação de dados por **sessão via cookie** (`sessionId`).
+O **api-transacoes** é uma API HTTP simples para **criação e consulta de transações**, com persistência em **SQLite** e separação de dados por **sessão via cookie** (`sessionId`).
+
+Este projeto é um dos projetos desenvolvidos durante um curso da **Rocketseat**.
 
 ### Funcionalidades Principais
 
@@ -160,4 +162,3 @@ curl -i http://localhost:3333/transactions/summary ^
 - `npm run lint`: roda o ESLint (com autofix).
 - `npm test`: roda a suíte de testes (Vitest).
 - `npm run build`: gera build via `tsup` em `build/`.
-
